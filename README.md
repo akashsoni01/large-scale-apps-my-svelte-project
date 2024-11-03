@@ -14,3 +14,7 @@ The folder my-svelte-project contains the main project built throughout the to t
 
 ### Remarks
 TODO
+
+
+rm -rf src-tauri/target
+./build.sh
