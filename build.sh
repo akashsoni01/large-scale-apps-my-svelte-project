@@ -6,9 +6,9 @@ directories=("my-component-library" "my-js-helpers" "my-svelte-project")
 # Loop through each directory and run npm install
 for dir in "${directories[@]}"; do
   echo "Running npm install in $dir"
-  (cd "$dir" && npm install)
+  (cd "$dir" && npm install && npm all)
   echo "Running npm audit in $dir"
-  (cd "$dir" && npm audit)
+  (cd "$dir" && npm audit fix --force)
 done
 
 # Run npm install and npm audit for the third folder
